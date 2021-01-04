@@ -86,7 +86,9 @@ class Profile extends Component {
       authenticated ? (
         <Paper className={classes.paper}>
           <div className={classes.profile}>
-            <Typography variant="h2">Welcome to Recipe4me</Typography>
+            <Typography variant="h5" align="center">
+              Welcome to Recipe4me
+            </Typography>
             <div className="image-wrapper">
               <img src={imageUrl} className="logoProfile" alt="profile" />
             </div>
@@ -121,14 +123,16 @@ class Profile extends Component {
                 </Fragment>
               )}
               <CalendarToday color="primary" />
-              <span>Joined: {dayjs(createdAt).format("MMM YYYY")}</span>
+              <span> Joined: {dayjs(createdAt).format("MMM YYYY")}</span>
             </div>
-            <Tooltip title="Logout" placement="top">
-              <IconButton onClick={this.handleLogout}>
-                <KeyboardReturn color="primary" />
-              </IconButton>
-            </Tooltip>
-            <EditDetails />
+            <div className="profile-actions">
+              <Tooltip title="Logout" placement="top">
+                <IconButton onClick={this.handleLogout}>
+                  <KeyboardReturn color="primary" />
+                </IconButton>
+              </Tooltip>
+              <EditDetails />
+            </div>
           </div>
         </Paper>
       ) : (

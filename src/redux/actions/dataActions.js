@@ -71,7 +71,7 @@ export const postRecipe = (newRecipe) => (dispatch) => {
     });
 };
 
-// Like a scream
+// Like a recipe
 export const likeRecipe = (recipeId) => (dispatch) => {
   axios
     .get(`recipe/${recipeId}/like`)

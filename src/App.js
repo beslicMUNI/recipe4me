@@ -21,6 +21,9 @@ import login from "./pages/login";
 import signup from "./pages/signup";
 import axios from "axios";
 
+axios.defaults.baseURL =
+  "https://europe-west1-recipe4me-1be60.cloudfunctions.net/api";
+
 const theme = createMuiTheme(themeFile);
 
 const token = localStorage.FBIdToken;

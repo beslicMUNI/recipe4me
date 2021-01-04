@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 .image-wrapper img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 a {
@@ -46,4 +46,8 @@ button {
 }
 header {
   background-color: #fff;
+}
+
+.profile-actions {
+  text-align: right;
 }

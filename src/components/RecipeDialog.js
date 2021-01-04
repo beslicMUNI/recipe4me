@@ -35,9 +35,9 @@ class RecipeDialog extends Component {
 
   handleOpen = () => {
     this.props.getRecipe(this.props.recipeId);
-    //this.setState({ open: true, loading: false });
-    //this.state.open = true;
-    this.setState({ open: true });
+    this.setState({ open: true, loading: false });
+    // this.state.open = true;
+    // this.setState({ open: true });
     console.log(this.state);
   };
   handleClose = () => {

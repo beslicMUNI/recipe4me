@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import Grid from "@material-ui/core/Grid";
 
 import Recipe from "../components/Recipe";
@@ -22,7 +21,7 @@ export class home extends Component {
   render() {
     const { recipes, loading } = this.props.data;
     let recentRecipesMarkup = !loading ? (
-      recipes.map((recipe) => <Recipe key={recipe.recipeId} recipe={recipe} />)
+      recipes.map((recipe) => <Recipe key={recipe.recipeid} recipe={recipe} />)
     ) : (
       <p>Loading...</p>
     );

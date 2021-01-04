@@ -41,6 +41,9 @@ export default function (state = initialState, action) {
         (recipe) => recipe.recipeId === action.payload.recipeId
       );
       state.recipes[index] = action.payload;
+      if (state.recipe.recipeId === action.payload.recipeId) {
+        state.recipe = action.payload;
+      }
       return { ...state };
     case DELETE_RECIPE:
       index = state.recipes.findIndex(

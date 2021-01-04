@@ -1,8 +1,7 @@
 module.exports = {
   apiKey: "AIzaSyB7dQNUwq5BYt2W5RZgac1jzK2xncUuQqE",
   authDomain: "recipe4me-1be60.firebaseapp.com",
-  databaseURL:
-    "https://recipe4me-1be60-default-rtdb.europe-west1.firebasedatabase.app",
+  databaseURL: "https://recipe4me-1be60.firebaseio.com",
   projectId: "recipe4me-1be60",
   storageBucket: "recipe4me-1be60.appspot.com",
   messagingSenderId: "798563157926",
